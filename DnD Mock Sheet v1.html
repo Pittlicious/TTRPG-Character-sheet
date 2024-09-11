@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DnD Mock Sheet v1</title>
+    <style>
+        h2 {
+            color: brown;
+        }
+        h3 {
+            color: brown;
+        }
+        .box {
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 25px;
+        }
+        .circle {
+            height: 30px;
+            width: 30px;
+            background-color: grey;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            cursor: pointer; /* Cursor changes to a pointer on hover */
+        }
+        .circle.red {
+            background-color: red; /* Red background when clicked */
+        }
+        .stress-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            vertical-align: top;
+            padding: 5px;
+        }
+        .right-align {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Character name: _____________________________</h2>
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h3>Background:</h3>
+                        <p>______________________________</p>
+                        <p>______________________________</p>
+                    </td>
+                    <td class="left-align" colspan="2">
+                        <h3>Triggers:</h3>
+                        <p>______________________________</p>
+                        <p>______________________________</p>
+                        <p>______________________________</p>
+                        <p>______________________________</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Callsign:_______________</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="stress-container">
+            <h2>Stress:</h2>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Skill:</h2>
+    </div>
+
+    <script>
+        // Select all elements with the class 'circle'
+        const circles = document.querySelectorAll('.circle');
+
+        // Add a click event listener to each circle
+        circles.forEach(circle => {
+            circle.addEventListener('click', () => {
+                // Toggle the 'red' class on click
+                circle.classList.toggle('red');
+            });
+        });
+    </script>
+</body>
+</html>
