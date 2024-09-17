@@ -33,6 +33,21 @@
             align-items: center;
             gap: 5px;
         }
+        .flex-container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            gap: 20px; /* Space between the elements */
+        }
+        .test-box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0; /* Margin above and below */
+            width: 150px; /* Adjust width as needed */
+            height: 100px; /* Adjust height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         table {
             width: 100%;
         }
@@ -73,21 +88,70 @@
         </div>
     </div>
 
-    <div class="box" style="border: 0px;" style="width: 500px;"> <!-- borderless box to seperate the page and highlight hit points -->
-        <div class="stress-container">
-            <h2>Stress:</h2>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+    <div class="flex-container">
+        <!-- Stress/"Hit Points" -->
+        <div>
+            <div class="stress-container">
+                <h2>Stress:</h2>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+            <!-- Image box reserved for range of die's, d20, d4, d6 etc -->
+            <div class="test-box">
+                <img src="" alt="Image Placeholder">
+                <!-- Replace the img tag with your image source when needed -->
+            </div>
+        </div>
+
+        <!-- order list to be insert for inventory management -->
+        <div class="box" style="width: 600px;">
+            <table>
+                <thead>Clock(s)</thead>
+
+                <tr>
+                    <td>test</td>
+                </tr>
+
+                <tr>
+                    <td>test</td>
+                </tr>
+
+                <tr>
+                    <td>test</td>
+                </tr>
+
+                <tr>
+                    <td>test</td>
+                </tr>
+            </table>
         </div>
     </div>
 
-    <div class="box" style="width: 500px;">
-        <h2>Skill:</h2>
+    <div class="box">
+        <table>
+            <thead>Inventory:</thead>
+            <tr>
+                <td>test</td>
+            </tr>
+
+            <tr>
+                <td>test</td>
+            </tr>
+
+            <tr>
+                <td>test</td>
+            </tr>
+
+            <tr>
+                <td>test</td>
+            </tr>
+        </table>
     </div>
 
     <script>
