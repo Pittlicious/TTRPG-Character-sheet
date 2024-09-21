@@ -1,0 +1,55 @@
+h2 {
+    color: brown;
+}
+h3 {
+    color: brown;
+}
+.box {
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+.circle {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer; /* Cursor changes to a pointer on hover */
+}
+.circle.red {
+    background-color: red; /* Red background when clicked */
+}
+.stress-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the elements */
+}
+.test-box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px 0; /* Margin above and below */
+    width: 150px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 100%;
+}
+td {
+    vertical-align: top;
+    padding: 5px;
+}
+.right-align {
+    text-align: right;
+}

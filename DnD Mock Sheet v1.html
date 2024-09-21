@@ -1,64 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD Mock Sheet v1</title>
-    <style>
-        h2 {
-            color: brown;
-        }
-        h3 {
-            color: brown;
-        }
-        .box {
-            color: black;
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 25px;
-        }
-        .circle {
-            height: 30px;
-            width: 30px;
-            background-color: grey;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 5px;
-            cursor: pointer; /* Cursor changes to a pointer on hover */
-        }
-        .circle.red {
-            background-color: red; /* Red background when clicked */
-        }
-        .stress-container {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .flex-container {
-            display: flex;
-            align-items: flex-start; /* Align items to the top */
-            gap: 20px; /* Space between the elements */
-        }
-        .test-box {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px 0; /* Margin above and below */
-            width: 150px; /* Adjust width as needed */
-            height: 100px; /* Adjust height as needed */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        table {
-            width: 100%;
-        }
-        td {
-            vertical-align: top;
-            padding: 5px;
-        }
-        .right-align {
-            text-align: right;
-        }
-    </style>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="box">
@@ -71,7 +18,7 @@
                         <p>______________________________</p>
                         <p>______________________________</p>
                     </td>
-                    <td class="left-align" colspan="2">
+                    <td colspan="2">
                         <h3>Triggers:</h3>
                         <p>______________________________</p>
                         <p>______________________________</p>
@@ -109,26 +56,14 @@
             </div>
         </div>
 
-        <!-- order list to be insert for inventory management -->
+        <!-- Order list for inventory management -->
         <div class="box" style="width: 600px;">
             <table>
                 <thead>Clock(s)</thead>
-
-                <tr>
-                    <td>test</td>
-                </tr>
-
-                <tr>
-                    <td>test</td>
-                </tr>
-
-                <tr>
-                    <td>test</td>
-                </tr>
-
-                <tr>
-                    <td>test</td>
-                </tr>
+                <tr><td>test</td></tr>
+                <tr><td>test</td></tr>
+                <tr><td>test</td></tr>
+                <tr><td>test</td></tr>
             </table>
         </div>
     </div>
@@ -145,17 +80,7 @@
         </table>
     </div>
 
-    <script>
-        // Select all elements with the class 'circle'
-        const circles = document.querySelectorAll('.circle');
-
-        // Add a click event listener to each circle
-        circles.forEach(circle => {
-            circle.addEventListener('click', () => {
-                // Toggle the 'red' class on click
-                circle.classList.toggle('red');
-            });
-        });
-    </script>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
