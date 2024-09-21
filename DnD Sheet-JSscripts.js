@@ -8,3 +8,6 @@ circles.forEach(circle => {
         circle.classList.toggle('red');
     });
 });
+
+
+// adding a few die to work with and test logic: d20 and d6
