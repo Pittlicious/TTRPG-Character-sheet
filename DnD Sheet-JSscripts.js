@@ -10,9 +10,17 @@ circles.forEach(circle => {
 });
 
 
-// adding a few die to work with and test logic: d20 and d6
-document.getElementById("dice").addEventListener("click", function()
+// d20
+document.getElementById("d20").addEventListener("click", function()
 {
     let roll = Math.floor(Math.random() * 20) +1;
     document.getElementById("result").textContent = roll;
 })
+
+// d6
+document.getElementById("d6").addEventListener("click", function()
+{
+    let roll = Math.floor(Math.random() * 6) +1;
+    document.getElementById("result").textContent = roll;
+}
+)
