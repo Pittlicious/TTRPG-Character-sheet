@@ -24,3 +24,11 @@ document.getElementById("d6").addEventListener("click", function()
     document.getElementById("result").textContent = roll;
 }
 )
+
+// d4
+document.getElementById("d4").addEventListener("click", function()
+{
+    let roll = Math.floor(Math.random() * 4) +1;
+    document.getElementById("result").textContent = roll;
+}
+)
