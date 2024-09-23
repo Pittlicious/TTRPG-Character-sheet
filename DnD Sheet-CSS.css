@@ -63,3 +63,18 @@ p{
     font-size: 1.5em;
     font-family: Arial, sans-serif;
 }
+
+.inventory-box {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+.inventory-item {
+    width: 98%;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
