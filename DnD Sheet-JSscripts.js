@@ -16,18 +16,18 @@ document.getElementById("d20").addEventListener("click", function()
     document.getElementById("result").textContent = roll;
 })
 
-// d12
-document.getElementById("d12")addEventListener("click", function()
+//d12
+document.getElementById("d12").addEventListener("click", function()
 {
     let roll =  Math.floor(Math.random() * 12) +1;
-    this.document.getElementById("result").textContent = roll;
+    document.getElementById("result").textContent = roll;
 })
 
 // d8
-document.getElementById("d8")addEventListener("click", function()
+document.getElementById("d8").addEventListener("click", function()
 {
     let roll =  Math.floor(Math.random() * 8) +1;
-    this.document.getElementById("result").textContent = roll;
+    document.getElementById("result").textContent = roll;
 })
 
 // d6
