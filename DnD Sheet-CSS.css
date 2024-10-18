@@ -64,6 +64,10 @@ p{
     font-family: Arial, sans-serif;
 }
 
+body{
+    background-image: url('Images/galaxybackdrop.jpg');
+}
+
 .inventory-box {
     width: 100%;
     padding: 10px;
